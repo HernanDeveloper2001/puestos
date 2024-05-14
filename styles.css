@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    background-color: rgba(255, 228, 196, 0.727);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.contenedor_sesion {
+    background-color: rgba(246, 233, 217, 0.452);
+    display: flex;
+    padding: 5px;
+    width: 300px;
+    flex-direction: column;
+}
+
+.contenedor_sesion__contenido {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    padding: 5px;
+}
+
+.contenido_escenario {
+    border: 2px solid rgb(197, 197, 197);
+    width: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.contenido_escenario > p {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+.contenido_lugares {
+    text-align: center;
+}
+
+.contenido_lugares__tabla {
+    width: 100%;
+    padding: 5px;
+}
+
+.contenido_lugares__tabla > td {
+    text-align: center;
+}
+
+
+/*FORMULARIO*/
+.contenedor_sesion__controles {
+    padding: 5px;
+}
+
+.controles_formulario {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.controles_formulario > label {
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.controles_formulario-text {
+    text-align: left;
+    width: 70%;
+}
+
+.controles_formulario > input[type="text"], input {
+    margin: auto;
+    width: 50%;
+}
+
+#reservar {
+    color : blue;
+}
+#comprar {
+    color: red;
+}
+#libre {
+    color: green;
+}
+
+
+
+/*BOTONES*/
+.botones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    padding: 5px;
+    grid-column: 1 / span 2;
+}
+
+.boton {
+    padding: 10px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(215, 215, 173);
+    border-radius: 5px;
+    border: 1px solid rgb(231, 231, 144);
+    &:hover {
+        background-color: rgb(231, 231, 144);
+        transition: 0.3s ease-in;
+        color: #fff;
+        border: 1px solid rgb(215, 215, 173);
+    }
+}
+
+.errores {
+    color: red;
+    grid-column: 1 / span 2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: initial;
+    font-weight: 200;
+    width: 100%;
+    text-align: center;
+}
